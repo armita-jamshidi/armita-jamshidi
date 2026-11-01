@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Hi, I'm Armita. I build AI agents that show their work, and the code that checks it." width="100%">
+  <img src="assets/banner.svg" alt="Hi, I'm Armita! I'm an AI engineer and a lifelong learner! Follow along as I build projects that teach me something new and serve a purpose I care about" width="100%">
 </p>
 
 <p align="center">
