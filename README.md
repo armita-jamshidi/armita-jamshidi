@@ -72,7 +72,7 @@ so it syncs to your phone.
   deck upgrade wipes the cards. 194 tests run in GitHub Actions against mocked Anki and a
   real Anki backend, and a local Gradio demo shares the same prompt.
 
-<p align="center"><img src="assets/road.svg" alt="Dave the RV driving across the page" width="100%"></p>
+<p align="center"><img src="assets/road.svg" alt="A ladybug crawling along a green leaf" width="100%"></p>
 
 ## 🛠️ Skills, with receipts
 
@@ -175,4 +175,4 @@ files in a Unity Catalog volume, and S3 stays the lake of record.
   </picture>
 </p>
 
-<p align="center"><img src="assets/signoff.svg" alt="Thanks for stopping by! Cassandra, Dave and Evidentia wave goodbye." width="100%"></p>
+<p align="center"><img src="assets/signoff.svg" alt="Thanks for stopping by! Ladybugs crawl across a teal polka-dot background." width="100%"></p>
