@@ -9,13 +9,7 @@
   <img src="https://komarev.com/ghpvc/?username=armita-jamshidi&color=4B9CD3&style=flat&label=profile%20views" alt="Profile views">
 </p>
 
-## 🃏 Meet the agents
-
-<p align="center">
-  <a href="https://github.com/armita-jamshidi/Apply_Auto"><img src="assets/card-cassandra.svg" alt="Cassandra: multi-agent job search assistant. 7 agents, 8 job sources, about 15,000 lines of Python and JavaScript, 534 tests." width="32%"></a>
-  <a href="https://github.com/armita-jamshidi/RV-trip-agent"><img src="assets/card-dave.svg" alt="Dave: RV trip planning agent. 5 hard rules in code, 6 free data sources, 2 fine-tuning notebooks, 347 tests." width="32%"></a>
-  <a href="https://github.com/armita-jamshidi/AI_powered_literature_review_engine"><img src="assets/card-evidentia.svg" alt="Evidentia: literature review engine and lakehouse. 3 medallion layers, 63 dbt data tests, 42 papers and 196 claims in the S3 run." width="32%"></a>
-</p>
+## 🚀 Projects
 
 ### 💼 [Cassandra](https://github.com/armita-jamshidi/Apply_Auto): a multi-agent talent agent
 
@@ -62,6 +56,22 @@ each question disagree, with stronger study designs getting a bigger vote.
   embeddings in Chroma, and LLM structured extraction into typed claims, which are
   clustered by embedding similarity and served from an async FastAPI backend.
 
+### 🥨 [Yada Yada Flags](https://github.com/armita-jamshidi/yada-yada-flags): an Anki add-on, [live on AnkiWeb](https://ankiweb.net/shared/info/1050900423)
+
+Yada Yada Flags spots the country flags you keep forgetting in the popular Ultimate Geography
+deck (3 or more lapses) and uses Claude to write a Seinfeld-themed mnemonic for each one,
+plus a plain explanation of the episode it references. The mnemonic is written into the card,
+so it syncs to your phone.
+
+- **The Claude API from inside Anki, with no SDK.** Anki add-ons can't install packages, so
+  the Messages API is called over Python's `urllib` with vision (each SVG flag is rendered to
+  PNG with Qt first), structured JSON outputs, prompt caching and retries. Optional
+  illustrations come from FLUX.1-schnell, with prompts that forbid people and logos.
+- **Built never to freeze or damage your deck.** API calls run in a background `QueryOp`, a
+  JSON file is the source of truth, and a self-repair step rebuilds every mnemonic after a
+  deck upgrade wipes the cards. 194 tests run in GitHub Actions against mocked Anki and a
+  real Anki backend, and a local Gradio demo shares the same prompt.
+
 <p align="center"><img src="assets/road.svg" alt="Dave the RV driving across the page" width="100%"></p>
 
 ## 🛠️ Skills, with receipts
@@ -73,7 +83,8 @@ each question disagree, with stronger study designs getting a bigger vote.
 | 📚 **RAG and grounded generation** | Chunking, embeddings, Chroma and LanceDB, agglomerative clustering of claims, quotes verified in code before a model's answer is used | [Evidentia](https://github.com/armita-jamshidi/AI_powered_literature_review_engine), [Cassandra](https://github.com/armita-jamshidi/Apply_Auto) |
 | 🏞️ **Lakehouse data engineering** | S3 bronze, PySpark and Delta Lake silver, dbt gold, Unity Catalog, Power BI with DAX | [Evidentia](https://github.com/armita-jamshidi/AI_powered_literature_review_engine) |
 | 🛡️ **Safe agent design** | No submit tool, approvals locked to a SHA-256 digest of the terms, validators that fail on unknown facts, a pre-commit hook that blocks personal data | [Cassandra](https://github.com/armita-jamshidi/Apply_Auto), [Dave](https://github.com/armita-jamshidi/RV-trip-agent) |
-| ✅ **Testing without the network** | 913 offline pytest tests: fake LLM clients with scripted replies, recorded HTTP fixtures, headless Chromium against local forms, GitHub Actions CI | all three |
+| 🧩 **Shipping a plugin to real users** | An Anki add-on published on AnkiWeb: host-app hooks, background `QueryOp` work, Claude vision and structured outputs over plain `urllib`, a JSON source of truth with self-repair, reproducible `.ankiaddon` builds | [Yada Yada Flags](https://github.com/armita-jamshidi/yada-yada-flags) |
+| ✅ **Testing without the network** | 1,107 offline pytest tests: fake LLM clients with scripted replies, recorded HTTP fixtures, headless Chromium against local forms, GitHub Actions CI | all four |
 
 ## 🧰 Tech stack
 
@@ -82,7 +93,7 @@ each question disagree, with stronger study designs getting a bigger vote.
   <br>
   <img src="https://skillicons.dev/icons?i=fastapi,flask,postgres,sqlite,aws,docker,githubactions&perline=7" alt="FastAPI, Flask, PostgreSQL, SQLite, AWS, Docker, GitHub Actions">
   <br>
-  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,git,github,powershell,notion&perline=7" alt="PyTorch, scikit-learn, Git, GitHub, PowerShell, Notion">
+  <img src="https://skillicons.dev/icons?i=pytorch,sklearn,qt,git,github,powershell,notion&perline=7" alt="PyTorch, scikit-learn, Qt, Git, GitHub, PowerShell, Notion">
 </p>
 
 <p align="center">
@@ -93,6 +104,9 @@ each question disagree, with stronger study designs getting a bigger vote.
   <img src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white" alt="Playwright">
   <img src="https://img.shields.io/badge/Chroma-FF6446" alt="Chroma">
   <img src="https://img.shields.io/badge/LanceDB-6E56CF" alt="LanceDB">
+  <img src="https://img.shields.io/badge/Anki%20add--ons-235390?logo=anki&logoColor=white" alt="Anki add-ons">
+  <img src="https://img.shields.io/badge/FLUX.1--schnell-000000?logo=huggingface&logoColor=FFD21E" alt="FLUX.1-schnell">
+  <img src="https://img.shields.io/badge/Gradio-F97316?logo=gradio&logoColor=white" alt="Gradio">
   <br>
   <img src="https://img.shields.io/badge/Databricks-FF3621?logo=databricks&logoColor=white" alt="Databricks">
   <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=white" alt="Apache Spark">
